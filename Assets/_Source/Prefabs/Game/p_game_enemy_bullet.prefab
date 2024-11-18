@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2203274442699821480}
   - component: {fileID: 6408457329960368499}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4866952134178291507}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,8 +127,8 @@ GameObject:
   - component: {fileID: 8840602378560072554}
   - component: {fileID: 3111644160333769599}
   - component: {fileID: 8300548197704528565}
-  m_Layer: 6
-  m_Name: p_game_player_bullet
+  m_Layer: 7
+  m_Name: p_game_enemy_bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

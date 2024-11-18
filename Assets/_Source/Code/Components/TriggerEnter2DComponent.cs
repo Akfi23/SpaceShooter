@@ -15,7 +15,7 @@ namespace _Source.Code.Components
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            _signal.Dispatch(other.transform);
+            _signal.Dispatch(transform,other.transform);
         }
     }
 }

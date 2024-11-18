@@ -10,7 +10,11 @@ public class GameScreen : UIScreen
     public FixedJoystick Joystick;
     public Button ShootButton;
     public Button BackButton;
-    public Button InfoButton;
     public TMP_Text ScoreText;
-    
+
+    public Image[] Hearts;
+
+    public Button InfoButton;
+    public Button CloseInfoButton;
+    public GameObject InfoPanel;
 }

@@ -11,6 +11,8 @@ namespace _Source.Code.Systems
         private float zRotation;
         public override void OnUpdate()
         {
+            if(game.Player == null ) return;
+
             game.Player.transform.Translate(Vector2.up * (Speed * Time.deltaTime * screen.Joystick.Direction.sqrMagnitude));
             
             float targetZRotate = Mathf.Atan2(screen.Joystick.Direction.x, screen.Joystick.Direction.y) * Mathf.Rad2Deg;

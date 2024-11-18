@@ -19,5 +19,7 @@ namespace Kuhpik
         public int CoinsPerRound;
         public int ScorePerRound;
         public PlayerShipComponent Player;
+
+        public List<ShipComponent> Enemies = new List<ShipComponent>();
     }
 }

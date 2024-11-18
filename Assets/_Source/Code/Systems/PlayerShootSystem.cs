@@ -17,6 +17,8 @@ namespace _Source.Code.Systems
 
         private void Shoot()
         {
+            if(game.Player == null ) return;
+            
             if(game.Player.ShootTimer>0) return;
 
             foreach (var shootPoint in game.Player.ShootPoints)

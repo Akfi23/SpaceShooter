@@ -6,6 +6,8 @@ public class ShipComponent : MonoBehaviour
     public Transform[] ShootPoints;
     public float ShootTimer;
     public float ShootDelay;
+    public int MaxHealth;
+    public int CurrentHealth;
 
     public void Update()
     {

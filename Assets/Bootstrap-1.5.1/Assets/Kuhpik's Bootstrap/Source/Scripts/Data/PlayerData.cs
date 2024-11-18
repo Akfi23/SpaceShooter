@@ -15,6 +15,6 @@ namespace Kuhpik
         public int Coins;
         public int Score;
         public int CurrentSkinIndex;
-        public int[] BoughtSkinsIndexes=new []{0};
+        public List<int> BoughtSkinsIndexes=new List<int>() { 0 };
     }
 }

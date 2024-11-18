@@ -12,3 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0bbf493a6018b41b94c2288283a11a, type: 3}
   m_Name: Game Config
   m_EditorClassIdentifier: 
+  StopDistance: 5
+  ShopItemDatas:
+  - Icon: {fileID: 21300000, guid: efcb668cf72bd4f8a80c362045ae95fd, type: 3}
+    Energy: 0
+    Damage: 0
+    Price: 100
+    SkinIndex: 0
+  - Icon: {fileID: 21300000, guid: e24a04b6f0d164d23a71efdb2dc37d41, type: 3}
+    Energy: 1
+    Damage: 2
+    Price: 200
+    SkinIndex: 1
+  - Icon: {fileID: 21300000, guid: 8b1d3fb5ef1934ba59576c61b802a5b3, type: 3}
+    Energy: 2
+    Damage: 3
+    Price: 300
+    SkinIndex: 2
+  - Icon: {fileID: 21300000, guid: e1079662dfe2c4f569e8e7a1c68ea0f1, type: 3}
+    Energy: 3
+    Damage: 4
+    Price: 400
+    SkinIndex: 3
+  - Icon: {fileID: 21300000, guid: 9e501fe86bd6241e18d8d13aab756690, type: 3}
+    Energy: 4
+    Damage: 5
+    Price: 500
+    SkinIndex: 4

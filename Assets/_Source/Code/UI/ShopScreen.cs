@@ -14,4 +14,7 @@ public class ShopScreen : UIScreen
     public TMP_Text PriceText;
     public TMP_Text CoinsText;
     public Button[] ShopButton;
+
+    public Sprite BuySprite;
+    public Sprite UseSprite;
 }

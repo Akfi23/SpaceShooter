@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
+using _Source.Code.Components;
+using _Source.Code.Events;
+using Kuhpik;
+using Supyrb;
 using UnityEngine;
 
-public class CoinsCollectSystem : MonoBehaviour
+namespace _Source.Code.Systems
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CoinsCollectSystem : GameSystem
     {
-        
-    }
+        public override void OnInit()
+        {
+            Signals.Get<OnTrigger2DEnterSignal>().AddListener(OnCoinContact);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override void OnStateExit()
+        {
+            game.CoinsPerRound = 0;
+        }
+
+        private void OnCoinContact(Transform transform,Transform other)
+        {
+            if(!transform.TryGetComponent(out ShipComponent ship)) return;
+            if(!other.TryGetComponent(out CoinComponent bullet)) return;
+            
+            Destroy(other.gameObject);
+
+            player.Coins++;
+            game.CoinsPerRound++;
+        }
     }
 }

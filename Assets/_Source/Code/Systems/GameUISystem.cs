@@ -1,4 +1,5 @@
 using Kuhpik;
+using UnityEngine;
 
 namespace _Source.Code.Systems
 {
@@ -7,7 +8,23 @@ namespace _Source.Code.Systems
         public override void OnInit()
         {
             screen.BackButton.onClick.AddListener(()=>Bootstrap.Instance.ChangeGameState(GameStateID.Menu));
-            screen.InfoButton.onClick.AddListener(()=>{});
+            
+            screen.InfoButton.onClick.AddListener(() =>
+            {
+                Time.timeScale = 0;
+                screen.InfoPanel.SetActive(true);
+            });
+            
+            screen.CloseInfoButton.onClick.AddListener(() =>
+            {
+                Time.timeScale = 1;
+                screen.InfoPanel.SetActive(false);
+            });
+        }
+
+        public override void OnStateExit()
+        {
+            Bootstrap.Instance.SaveGame();
         }
 
         public override void OnUpdate()
