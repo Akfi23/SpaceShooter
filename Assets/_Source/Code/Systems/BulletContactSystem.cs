@@ -53,6 +53,11 @@ namespace _Source.Code.Systems
                 game.Enemies.Remove(ship);
             }
 
+            if (transform.TryGetComponent(out PlayerShipComponent player))
+            {
+                Bootstrap.Instance.ChangeGameState(GameStateID.Menu);
+            }
+
             Instantiate(DieFX, transform.position, Quaternion.identity);
             Destroy(transform.gameObject);  
         }
