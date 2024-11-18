@@ -11,7 +11,8 @@ namespace _Source.Code.Systems
     {
         public GameObject CoinPrefab;
         public float CoinsSpawnRadius;
-        
+        public GameObject HitFX;
+        public GameObject DieFX;
         
         public override void OnInit()
         {
@@ -30,6 +31,7 @@ namespace _Source.Code.Systems
 
             ship.CurrentHealth--;
             
+            Instantiate(HitFX, other.position, Quaternion.identity);
             Destroy(other.gameObject);
 
             if (!DOTween.IsTweening(ship.Image))
@@ -50,7 +52,8 @@ namespace _Source.Code.Systems
 
                 game.Enemies.Remove(ship);
             }
-            
+
+            Instantiate(DieFX, transform.position, Quaternion.identity);
             Destroy(transform.gameObject);  
         }
 

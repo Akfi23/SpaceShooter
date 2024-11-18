@@ -14,12 +14,13 @@ namespace _Source.Code.Systems
             if(game.Player == null ) return;
 
             game.Player.transform.Translate(Vector2.up * (Speed * Time.deltaTime * screen.Joystick.Direction.sqrMagnitude));
-            
-            float targetZRotate = Mathf.Atan2(screen.Joystick.Direction.x, screen.Joystick.Direction.y) * Mathf.Rad2Deg;
-            Quaternion targetRotation = Quaternion.Euler(0f, 0f, -targetZRotate);
 
-            game.Player.transform.rotation = Quaternion.Slerp(game.Player.transform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
-
+            if (screen.Joystick.Direction.sqrMagnitude > 0)
+            {
+                float targetZRotate = Mathf.Atan2(screen.Joystick.Direction.x, screen.Joystick.Direction.y) * Mathf.Rad2Deg;
+                Quaternion targetRotation = Quaternion.Euler(0f, 0f, -targetZRotate);
+                game.Player.transform.rotation = Quaternion.Slerp(game.Player.transform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
+            }
         }
     }
 }
