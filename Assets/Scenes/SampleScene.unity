@@ -7306,21 +7306,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '  New Text New Text New Text New Text New Text New Text New Text New Text
-    New Text   New Text New Text New Text New Text New Text New Text New Text New
-    Text New Text   New Text New Text New Text New Text New Text New Text New Text
-    New Text New Text   New Text New Text New Text New Text New Text New Text New
-    Text New Text New Text    New Text New Text New Text New Text New Text New Text
-    New Text New Text New Text   New Text New Text New Text New Text New Text New
-    Text New Text New Text New Text   New Text New Text New Text New Text New Text
-    New Text New Text New Text New Text   New Text New Text New Text New Text New
-    Text New Text New Text New Text New Text   New Text New Text New Text New Text
-    New Text New Text New Text New Text New Text   New Text New Text New Text New
-    Text New Text New Text New Text New Text New Text   New Text New Text New Text
-    New Text New Text New Text New Text New Text New Text   New Text New Text New
-    Text New Text New Text New Text New Text New Text New Text   New Text New Text
-    New Text New Text New Text New Text New Text New Text New Text   New Text New
-    Text New Text New Text New Text New Text New Text New Text New Text  '
+  m_text: Choose a spaceship and go to space battles for a record. A hit or a clash
+    with the enemy takes your life, the murders of enemies give you points and coins
+    to buy new space ships. Let's see how much you are enough. Beat your records
+    and update.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
